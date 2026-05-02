@@ -1,0 +1,108 @@
+{
+  "runs": {
+    "Run 3 (s20_e3)": {
+      "config": {
+        "max_steps": 20,
+        "epochs": 3,
+        "examples": 251
+      },
+      "pass1_mean": 0.0,
+      "pass5_union": [],
+      "pass5_count": 0,
+      "n_pass_runs_graded": 5
+    },
+    "Run 4 (d251_e10)": {
+      "config": {
+        "max_steps": 67,
+        "epochs": 10,
+        "examples": 251
+      },
+      "pass1_mean": 0.6,
+      "pass5_union": [
+        "django__django-7530",
+        "pydata__xarray-4629"
+      ],
+      "pass5_count": 2,
+      "n_pass_runs_graded": 5
+    },
+    "Run 2 (s70_e3)": {
+      "config": {
+        "max_steps": 70,
+        "epochs": 3,
+        "examples": 881
+      },
+      "pass1_mean": 0.6,
+      "pass5_union": [
+        "django__django-16527",
+        "django__django-7530"
+      ],
+      "pass5_count": 2,
+      "n_pass_runs_graded": 5
+    },
+    "Run 1 (s200_e3)": {
+      "config": {
+        "max_steps": 200,
+        "epochs": 3,
+        "examples": 2518
+      },
+      "pass1_mean": 4.0,
+      "pass5_union": [
+        "django__django-10914",
+        "django__django-11163",
+        "django__django-12050",
+        "django__django-14855",
+        "django__django-15467",
+        "django__django-16527",
+        "django__django-16569",
+        "django__django-7530",
+        "pydata__xarray-4629",
+        "pytest-dev__pytest-5809",
+        "pytest-dev__pytest-6202"
+      ],
+      "pass5_count": 11,
+      "n_pass_runs_graded": 5
+    },
+    "Run 5 (d881_e9)": {
+      "config": {
+        "max_steps": 216,
+        "epochs": 9,
+        "examples": 881
+      },
+      "pass1_mean": 2.4,
+      "pass5_union": [
+        "django__django-11163",
+        "django__django-11603",
+        "django__django-12155",
+        "django__django-13569",
+        "django__django-16801",
+        "django__django-7530",
+        "pydata__xarray-4629",
+        "pytest-dev__pytest-5809",
+        "scikit-learn__scikit-learn-14496"
+      ],
+      "pass5_count": 9,
+      "n_pass_runs_graded": 5
+    }
+  },
+  "all_resolved_union": [
+    "django__django-10914",
+    "django__django-11163",
+    "django__django-11603",
+    "django__django-12050",
+    "django__django-12155",
+    "django__django-13569",
+    "django__django-14855",
+    "django__django-15467",
+    "django__django-16527",
+    "django__django-16569",
+    "django__django-16801",
+    "django__django-7530",
+    "pydata__xarray-4629",
+    "pytest-dev__pytest-5809",
+    "pytest-dev__pytest-6202",
+    "scikit-learn__scikit-learn-14496"
+  ],
+  "total_unique": 16,
+  "eval_pool": 42,
+  "eval_pool_file": "/home/rolmedo/talkie/sft/swe_bench_eval_union42.json"
+}

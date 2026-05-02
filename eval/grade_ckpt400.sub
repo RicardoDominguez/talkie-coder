@@ -1,0 +1,17 @@
+executable = /lustre/home/rolmedo/talkie-eval/swe-evals/run_grade_wrapper.sh
+
+environment = "PREDS_FILE=/fast/rolmedo/swesmith/talkie-web-v2-ckpt400-mini-100/preds.merged.json OUTPUT_DIR=/fast/rolmedo/swesmith/talkie-web-v2-ckpt400-mini-100 RUN_ID=talkie-v2-ckpt400-take1 MAX_WORKERS=12"
+
+request_cpus   = 16
+request_gpus   = 0
+request_memory = 200GB
+request_disk   = 300GB
+
+requirements = (TARGET.UtsnameNodename != "i206") && (TARGET.UtsnameNodename != "g105")
++BypassLXCfs = true
+
+output = /lustre/home/rolmedo/talkie-eval/swe-evals/condor_logs/grade.$(Cluster).$(Process).out
+error  = /lustre/home/rolmedo/talkie-eval/swe-evals/condor_logs/grade.$(Cluster).$(Process).err
+log    = /lustre/home/rolmedo/talkie-eval/swe-evals/condor_logs/grade.$(Cluster).log
+
+queue
