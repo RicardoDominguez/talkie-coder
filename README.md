@@ -6,7 +6,7 @@ We fine-tune Alec Radford's 1930 vintage LLM — pre-trained only on
 pre-1931 data — to solve SWE-bench issues. 
 
 After just 250 training
-examples the model lands [its first fix](https://htmlpreview.github.io/?https://github.com/RicardoDominguez/talkie-coder/blob/main/analysis/pydata__xarray-4629.traj.html) (a small patch to xarray);
+examples the model lands [its first fix](https://ricardodominguez.github.io/blogs/pydata__xarray-4629.traj.html) (a small patch to xarray);
 scaled to ~75K trajectories (1B tokens), it reaches **4.5% pass@1** on
 SWE-bench-Verified, up from 4% pass@100 on HumanEval at the base. 
 
