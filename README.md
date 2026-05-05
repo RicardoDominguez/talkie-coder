@@ -1,6 +1,6 @@
 # From 1930 to SWE-bench
 
-[<img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="🤗" width="18"/> Models and training data](https://huggingface.co/collections/ricdomolm/1930-coder)
+[<img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="🤗" width="18"/> Models and training data](https://huggingface.co/collections/ricdomolm/1930-coder) · [<img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="🤗" width="18"/> Eval trajectories](https://huggingface.co/datasets/ricdomolm/eval-trajs-1930-coder) (1930 + web subsets, ⚠️ test data — do not train)
 
 We fine-tune Alec Radford's 1930 vintage LLM — pre-trained only on
 pre-1931 data — to solve SWE-bench issues. 
@@ -245,7 +245,10 @@ python summarize_sweep.py <output-dir-pattern> > sweep_summary.json
 
 The eval JSONs in `analysis/` are the harness's per-run reports
 (`*-pass*-run*.json` containing `resolved_ids`); the notebook reduces
-them to pass@1 means and bars.
+them to pass@1 means and bars. The full per-instance agent trajectories
+that produced these reports are published at
+[`ricdomolm/eval-trajs-1930-coder`](https://huggingface.co/datasets/ricdomolm/eval-trajs-1930-coder)
+(`1930` and `web` subsets, single `test` split — **do not train on this**).
 
 Non-obvious eval-side decisions (full list in `eval/README.md`):
 
